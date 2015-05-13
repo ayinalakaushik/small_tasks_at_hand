@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smalltasksathand.kaushik.login" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-library android:name="com.google.android.maps" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register"
+            android:parentActivityName=".Login" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.smalltasksathand.kaushik.login.Login" />
+        </activity>
+        <activity
+            android:name=".user_home"
+            android:label="@string/title_activity_user_home"
+            android:parentActivityName=".Login" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.smalltasksathand.kaushik.login.Login" />
+        </activity>
+        <activity
+            android:name=".MAPS"
+            android:label="@string/title_activity_maps" >
+        </activity>
+        <activity
+            android:name=".job_post"
+            android:label="@string/title_activity_job_post" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB4tJ5-Ekoqo2890HrlRbq3o4x5spEQ05c" />
+
+        <activity
+            android:name=".task_applied"
+            android:label="@string/title_activity_task_applied" >
+        </activity>
+        <activity
+            android:name=".task_applied_result"
+            android:label="@string/title_activity_task_applied_result" >
+        </activity>
+        <activity
+            android:name=".task_feedback"
+            android:label="@string/title_activity_task_feedback" >
+        </activity>
+        <activity
+            android:name=".task_feedback_result"
+            android:label="@string/title_activity_task_feedback_result" >
+        </activity>
+        <activity
+            android:name=".task_feedback_feedback"
+            android:label="@string/title_activity_task_feedback_feedback" >
+        </activity>
+        <activity
+            android:name=".employee_home"
+            android:label="@string/title_activity_employee_home" >
+        </activity>
+        <activity
+            android:name=".task_search"
+            android:label="@string/title_activity_task_search" >
+        </activity>
+        <activity
+            android:name=".task_search_result"
+            android:label="@string/title_activity_task_search_result" >
+        </activity>
+        <activity
+            android:name=".task_accepted"
+            android:label="@string/title_activity_task_accepted" >
+        </activity>
+        <activity
+            android:name=".task_accepted_result"
+            android:label="@string/title_activity_task_accepted_result" >
+        </activity>
+        <activity
+            android:name=".search_MAPS"
+            android:label="@string/title_activity_search__maps" >
+        </activity>
+        <activity
+            android:name=".task_applied_employee"
+            android:label="@string/title_activity_task_applied_employee" >
+        </activity>
+    </application>
+
+</manifest>
